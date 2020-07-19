@@ -1,0 +1,59 @@
+/*
+ cd: change directory
+ mkdir: make directory
+ pwd: print working directory
+*/
+/* short cut
+ ctl+A: to the beginning of the cmd line
+ ctl+E: to the end ...
+ ctl+U: clean the current line
+*/
+
+
+$ touch Test.txt
+// Create a file
+$ open Test.txt
+// open file
+$ open -a Atom testTerminal.txt 
+// -a: open with application
+
+$ rm Test.txt
+// rm: remove file
+$ rm *
+// remove all the file in the directory
+$ rm -r Angela/
+// remove a directory
+
+
+
+
+>>>>> node.js : get access directly to the local files of the computer <<<<<
+ 
+$ touch index.js
+// create a file [index.js]
+$ node index.js
+// run the .js code with node
+
+
+REPL: Read Evaluation Print Loop
+// like $ python
+//      > [code]
+
+$ node
+> 
+
+
+/* native Node modules bundled with Node.js */
+eg: fileSystem, need to require it first.
+[index.js]
+	const fs = require("fs");
+	fs.copyFileSync(src, dest);
+$ node index.js
+
+
+/* npm package manager for external modules */
+$ npm init
+
+
+$ nodemon filename.js
+// restart the server whenever there are changes

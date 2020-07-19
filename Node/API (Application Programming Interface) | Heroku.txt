@@ -1,0 +1,63 @@
+
+What are APIs
+	- A set of commands, functions, protocols and objects that programmers can use to create software or interact with an external system. 
+
+Your Server
+^ Response [POST]
+|
+v Request [GET]
+Someone else's Server
+
+API 
+. Endpoint
+	- connected External system
+
+. Paths
+	- Paths and Parameters narrow down the pieces of information
+	- like this /...., think of ahead of time
+
+. Parameters
+	- for flexibility, provide parameter go at the end of url after the "?", like this ?key=value&key=value
+	- the order doesn't matter
+
+. Authentication
+	- API Key
+
+
+
+Format of API calls:
+. JSON
+. XML
+. HTML
+
+
+>>>>> Recommend Kit <<<<<
+1. url: postman.com/downloads/
+	- convenient parameter edit
+2. Chrome extension: JSON Viewer Awesome
+3. https://httpstatusdogs.com/
+
+
+>>>>> Heroku <<<<<
+
+
+/* create a url for  current project*/
+// create a [Procfile] 
+> web: node filename.js
+$ Heroku login
+$ Heroku create
+
+$ git add .
+// add all files in the folder
+
+$ git commit -m "commit_message"
+// save the current version
+
+$ git push heroku master
+// update the changes to the web
+
+
+/* open current project*/
+$ heroku login
+$ heroku open
+// https://greve-mandarine-25147.herokuapp.com/
